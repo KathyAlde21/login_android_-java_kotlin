@@ -35,14 +35,44 @@ public class LoginActivity extends AppCompatActivity {
                 // Verificar las credenciales del usuario
                 if (et_nombre_usuario.getText().toString().equals("") || et_password.getText().toString().equals("")) {
                     // Credenciales correctas, iniciar sesión
-                    Toast.makeText(LoginActivity.this, "No deben haber campos vacios", Toast.LENGTH_SHORT).show();
-                }else if (et_nombre_usuario.getText().toString().equals("usuario") && et_password.getText().toString().equals("123")) {
+                    Toast.makeText(LoginActivity.this, "No deben haber campos vacios", Toast.LENGTH_LONG).show();
+                } else if (et_nombre_usuario.getText().toString().equals("usuario") && et_password.getText().toString().equals("123")) {
                     // Credenciales correctas, iniciar sesión
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 } else {
                     // Credenciales incorrectas, mostrar mensaje de error
-                    Toast.makeText(LoginActivity.this, "Nombre de usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Nombre de usuario o contraseña incorrecta", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        //Animacion de escala, use la misma en ambos btn_tv
+        btn_tv_password_olvidada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.animate().scaleX(0.95f).scaleY(0.95f).setDuration(100).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                view.animate().scaleX(1f).scaleY(1f).setDuration(100).start();
+                            }
+                        })
+                        .start();
+                //Sin configurar crear cuenta y contraseña olvidada aparece mensaje emergente que dice "Pronto"
+                Toast.makeText(LoginActivity.this, "Pronto", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btn_tv_crear_cuenta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.animate().scaleX(0.95f).scaleY(0.95f).setDuration(100).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                view.animate().scaleX(1f).scaleY(1f).setDuration(100).start();
+                            }
+                        })
+                        .start();
+                //Sin configurar crear cuenta y contraseña olvidada aparece mensaje emergente que dice "Pronto"
+                Toast.makeText(LoginActivity.this, "Pronto", Toast.LENGTH_LONG).show();
             }
         });
     }
