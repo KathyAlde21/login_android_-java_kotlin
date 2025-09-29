@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Login</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_tv_password_olvidada">¿Olvidaste la Password?</string>
+    <string name="btn_tv_crear_cuenta">Crear Cuenta</string>
+    <string name="et_nombre_usuario">Nombre de usuario</string>
+    <string name="et_password">Password</string>
+    <string name="iv_logo">Logo de la app, es un ave de colores</string>
+
 </resources>

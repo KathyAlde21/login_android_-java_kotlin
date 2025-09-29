@@ -24,7 +24,7 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/logo_login"
-            android:contentDescription="Logo de la app, es un ave de colores"
+            android:contentDescription="@string/iv_logo"
             tools:layout_editor_absoluteX="147dp"
             tools:layout_editor_absoluteY="43dp" />
 
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:autofillHints=""
-            android:hint="Nombre de usuario"
+            android:hint="@string/et_nombre_usuario"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
-            android:hint="Password"
+            android:hint="@string/et_password"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:text="Ingresar"
+            android:text="@string/btn_ingresar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_password" />
@@ -68,25 +68,24 @@
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:text="¿Olvidaste la Password?"
+            android:text="@string/btn_tv_password_olvidada"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_ingresar" />
 
         <TextView
-            android:id="@+id/tv_crear_cuenta"
+            android:id="@+id/btn_tv_crear_cuenta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:text="Crear Cuenta"
+            android:text="@string/btn_tv_crear_cuenta"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_tv_password_olvidada" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

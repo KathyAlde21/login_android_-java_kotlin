@@ -11,8 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Login">
+
+    <!-- MainActivity ya no va a ser el principal
+    por eso cambio a false y dejo en true LoginActivity-->
+
+
         <activity
             android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+
+    <!-- LoginActivity => true -->
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
